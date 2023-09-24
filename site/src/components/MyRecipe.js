@@ -4,7 +4,22 @@ const MyRecipe = () => {
   return (
     <div>
       <h1>My Recipe Page</h1>
-      {/* Display 6 food items here with images and prices */}
+      {
+        <div className="container">
+        <div className="row">
+          <div className="col-md-4">
+            {/* Food Item 1 */}
+          </div>
+          <div className="col-md-4">
+            {/* Food Item 2 */}
+          </div>
+          <div className="col-md-4">
+            {/* Food Item 3 */}
+          </div>
+          {/* Repeat for additional food items */}
+        </div>
+      </div>      
+      }
     </div>
   );
 };
