@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Home from './Home';
-import MyRecipe from './MyRecipe';
-import AboutUs from './AboutUs';
+import Home from './components/Home';
+import MyRecipe from './components/MyRecipe';
+import AboutUs from './components/AboutUs';
 
 function App() {
   return (
@@ -13,17 +13,17 @@ function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/myrecipe">My Recipe</Link>
+            <Link to="/MyRecipe">My Recipe</Link>
           </li>
           <li>
-            <Link to="/aboutus">About Us</Link>
+            <Link to="/AboutUs">About Us</Link>
           </li>
         </ul>
       </nav>
 
       <Route path="/" exact component={Home} />
-      <Route path="/myrecipe" component={MyRecipe} />
-      <Route path="/aboutus" component={AboutUs} />
+      <Route path="/MyRecipe" component={MyRecipe} />
+      <Route path="/AboutUs" component={AboutUs} />
     </Router>
   );
 }
